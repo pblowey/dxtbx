@@ -173,7 +173,8 @@ class CachedWavelengthBeamFactory:
 
         if self.attenuator is not None:
             transmission = self.attenuator.transmission
-            self.model.set_transmission(float(transmission))
+            if transmission is not None:
+                self.model.set_transmission(float(transmission))
 
 
 def get_dxtbx_scan(
