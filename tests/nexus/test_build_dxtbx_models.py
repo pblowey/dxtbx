@@ -161,7 +161,7 @@ def test_get_dxtbx_beam(nxmx_example):
     assert isinstance(beam, dxtbx.model.Beam)
     assert beam.get_wavelength() == 0.976223
     assert beam.get_sample_to_source_direction() == (0.0, 0.0, 1.0)
-    assert beam.get_transmission() == 0.75
+    assert beam.get_transmission() == 1.00
 
 
 def test_get_dxtbx_beam_array_length_1():
